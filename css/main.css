@@ -1,0 +1,41 @@
+.main {
+  width: 100%;
+}
+.top-box {
+  display: flex;
+  height: 100%;
+  padding: 60px;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 1400px;
+}
+.top-info {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.top-info-click {
+  padding: 30px 50px;
+  border: 1px;
+  border-radius: 20px;
+  background-color: #efefef;
+  cursor: pointer;
+}
+
+.info-txt-color {
+  color: #06f;
+}
+
+.top-menu {
+}
+
+.top-menu-layer {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.layer-1 {
+  margin-right: 20px;
+}
