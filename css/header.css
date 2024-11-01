@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  height: 60px;
+}
+.header-main {
+  max-width: 1180px;
+}
+.class .sign-up-menu {
+  display: flex;
+}
+.sign-up {
+}
+.sign-up a {
+}
+
+.header-search {
+}
+.header-search a {
+}
+.header-menu {
+}
+.header-menu a {
+}
