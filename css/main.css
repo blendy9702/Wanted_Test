@@ -6,10 +6,13 @@
   height: 100%;
   padding: 60px;
   margin: 0 auto;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* text-align: center; */
   max-width: 1400px;
 }
 .top-info {
+  margin: 0 auto;
   font-weight: 500;
   font-size: 20px;
 }
@@ -27,15 +30,123 @@
 }
 
 .top-menu {
+  margin: 0 auto;
 }
 
 .top-menu-layer {
   display: flex;
-  padding: 0;
-  margin: 0;
+  margin: 100px 100px;
+  font-size: 13px;
   list-style-type: none;
+  gap: 15px;
 }
 
-.layer-1 {
-  margin-right: 20px;
+.top-menu-layer img {
+  /* margin-right: 20px; */
+  margin-bottom: 20px;
+}
+
+.top-slide {
+}
+.ts-txt {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.top-slide-menu {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.title-1 {
+  display: flex;
+  gap: 20px;
+}
+.title-card {
+  position: relative;
+  width: 100%;
+  height: auto; /* 비율 유지 */
+  /* max-width: 264px; */
+  /* max-height: 177px; */
+  /* overflow: hidden; */
+}
+.title-card h5 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+.title-card-img {
+  padding: 0;
+  margin: 0px;
+}
+.title-card-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.title-img-txt {
+  /* display: flex; */
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  padding: 15px 15px;
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+}
+.title-img-pass {
+}
+.title-img-icon {
+}
+
+.title-card-txt {
+  font-size: 14px;
+  color: rgba(55, 56, 60, 0.61);
+}
+
+.title-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.ts2-txt {
+  margin-top: 60px;
+  font-size: 22px;
+}
+
+.news-card {
+  display: flex;
+  position: relative;
+}
+.news-card-img {
+  /* display: block; */
+  /* width: 450px; */
+  /* height: 300px; */
+}
+.news-card-img img {
+  display: flex; /* 블록 요소로 변경 */
+  width: 100%; /* 반응형을 위해 너비 100% */
+  height: auto; /* 비율 유지 */
+  object-fit: cover;
+  border-radius: 20px;
+}
+.news-overlay-wrap {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 20px 20px;
+}
+
+.news-overlay-txt-1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+.news-overlay-txt-2 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
 }
