@@ -11,6 +11,9 @@
 }
 .header-logo {
   display: flex;
+  max-width: 170px;
+  min-width: 152px;
+  width: 12.142%;
 }
 
 .wanted-img-click {
@@ -24,9 +27,9 @@
 }
 .header-top-list {
   display: flex;
+  flex-direction: row;
   font-weight: 500;
   font-size: 15px;
-  margin-right: 5%;
   gap: 35px;
 }
 
