@@ -4,7 +4,6 @@
 .top-box {
   display: flex;
   height: 100%;
-  padding: 60px;
   margin: 0 auto;
   flex-direction: column;
   /* justify-content: center; */
@@ -18,11 +17,17 @@
 }
 
 .top-info-click {
-  padding: 20px 40px;
+  display: flex;
+  padding: 20px 30px;
   border: 1px;
+  gap: 5px;
   border-radius: 20px;
   background-color: #efefef;
   cursor: pointer;
+}
+
+.top-info-click img {
+  margin-left: 15px;
 }
 
 .info-txt-color {
@@ -36,18 +41,20 @@
 
 .top-menu-layer {
   display: flex;
+  /* width: 100%; */
   height: 100%;
-  margin: auto;
-  font-size: 13px;
   /* margin: 100px 100px; */
-  padding-top: 50px;
+  padding: 50px;
+  margin: 0 auto;
+  font-size: 13px;
   list-style-type: none;
-  /* gap: 10px; */
+  gap: 10px;
 }
 .layer-1 {
-  min-width: 116px;
-  margin-bottom: 40px;
-  margin-top: 10px;
+  width: 110px;
+  /* margin-bottom: 40px; */
+  /* margin-top: 10px; */
+  /* gap: 20px; */
 }
 
 .layer-1 a {
@@ -70,18 +77,20 @@
 .top-slide-txt-bt {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .ts-txt {
   font-size: 22px;
-  margin-bottom: 10px;
+  /* margin-bottom: 20px; */
 }
+
 .ts-bt-wrap {
   display: flex;
 }
 
 .ts-bt-1 {
-  width: 30px;
+  width: 28px;
   height: 30px;
   background-color: #fff;
   border-top: 1px solid #e7e7e7;
@@ -136,16 +145,18 @@
   font-size: 16px;
 }
 .title-card-img {
-  padding: 0;
-  margin: 0px;
+  /* padding: 0; */
+  margin: 0 auto;
   overflow: hidden;
+  border-radius: 20px;
 }
 .title-card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   transition: ease 0.2s;
+  transform: scale(1.1);
 }
 .title-card-img:hover img {
   transform: scale(1.05);
@@ -156,21 +167,22 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  height: 50px;
   width: 100%;
+  height: 50px;
   padding: 15px 15px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   color: #fff;
   font-size: 14px;
   text-align: left;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 20px 20px 0px 0px;
+  z-index: 1;
 }
 .title-img-pass {
 }
 .title-img-icon {
-  background-color: transparent;
   border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 .title-img-icon img {
@@ -188,28 +200,48 @@
   justify-content: space-between;
   gap: 15px;
 }
-
+.top-slide2-txt-bt {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
 .ts2-txt {
   font-size: 22px;
-  margin-top: 60px;
+  /* margin: 60px 0px 20px; */
 }
 
 .news-card {
   display: flex;
   position: relative;
+  transition: all 0.3s;
+}
+.news-card:hover {
+  transform: translateY(-10px);
+}
+.news-card:hover .news-card-img img {
+  transform: scale(1.1);
 }
 .news-card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
   /* display: block; */
   /* width: 450px; */
   /* height: 300px; */
 }
+
 .news-card-img img {
-  display: flex; /* 블록 요소로 변경 */
-  width: 100%; /* 반응형을 위해 너비 100% */
-  height: auto; /* 비율 유지 */
+  display: flex;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 20px;
+  transition: ease 0.3s;
 }
+/* .news-card-img img:hover {
+  transform: scale(1.1);
+} */
 .news-overlay-wrap {
   position: absolute;
   bottom: 0;
@@ -227,4 +259,67 @@
   color: #fff;
   font-weight: 500;
   font-size: 15px;
+}
+
+/* 중단 영역 css */
+
+.middle-box {
+  margin: auto;
+  height: 100%;
+  max-width: 1400px;
+}
+
+.middle-info {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.theme-bt {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.middle-position-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+}
+
+.middle-position {
+  border: 1px solid hsla(225, 5%, 46%, 0.16);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.middle-position img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: ease 0.2s;
+}
+.middle-position img:hover {
+  transform: scale(1.05);
+}
+.middle-po-txt-wrap {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  background-color: #fff;
+  gap: 4px;
+}
+.mptxt-1 {
+  font-size: 17px;
+  font-weight: 600;
+}
+.mptxt-2 {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(55, 56, 60, 0.61);
 }
