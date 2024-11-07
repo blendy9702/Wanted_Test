@@ -242,12 +242,58 @@
 /* .news-card-img img:hover {
   transform: scale(1.1);
 } */
-.news-overlay-wrap {
+.news-overlay-wrap-1 {
+  display: flex;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  margin: 20px 20px;
+  height: 140px;
+  padding: 20px 20px;
+  background: linear-gradient(
+    to top,
+    rgba(33, 109, 156, 0.6),
+    rgba(0, 0, 0, 0)
+  );
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 20px;
+}
+
+.news-overlay-wrap-2 {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  padding: 20px 20px;
+  background: linear-gradient(
+    to top,
+    rgba(33, 109, 156, 0.6),
+    rgba(0, 0, 0, 0)
+  );
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 20px;
+}
+
+.news-overlay-wrap-3 {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  padding: 20px 20px;
+  background: linear-gradient(
+    to top,
+    rgba(33, 109, 156, 0.6),
+    rgba(0, 0, 0, 0)
+  );
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 20px;
 }
 
 .news-overlay-txt-1 {
@@ -264,8 +310,8 @@
 /* 중단 영역 css */
 
 .middle-box {
-  margin: auto;
   height: 100%;
+  margin: auto;
   max-width: 1400px;
 }
 
@@ -287,39 +333,50 @@
 }
 
 .middle-position {
-  border: 1px solid hsla(225, 5%, 46%, 0.16);
-  width: 100%;
-  height: 100%;
   position: relative;
+  width: 100%;
+  height: 260px;
+  border: 1px solid hsla(225, 5%, 46%, 0.16);
   border-radius: 20px;
   overflow: hidden;
+  z-index: 1;
 }
 .middle-position img {
+  position: relative;
+  bottom: 30px;
   width: 100%;
   height: 100%;
+  border-radius: 20px;
   object-fit: cover;
   transition: ease 0.2s;
 }
 .middle-position img:hover {
   transform: scale(1.05);
 }
+
 .middle-po-txt-wrap {
   display: flex;
-  flex-direction: column;
   position: absolute;
-  left: 0;
   bottom: 0;
-  padding: 20px;
+  left: 0;
   width: 100%;
+  padding: 20px;
+  flex-direction: column;
   background-color: #fff;
   gap: 4px;
 }
 .mptxt-1 {
-  font-size: 17px;
   font-weight: 600;
+  font-size: 17px;
 }
 .mptxt-2 {
-  font-size: 13px;
-  font-weight: 500;
   color: rgba(55, 56, 60, 0.61);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.bottom-posi {
+  height: 100%;
+  margin: auto;
+  max-width: 1400px;
 }
